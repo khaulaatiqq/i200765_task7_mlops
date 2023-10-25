@@ -1,12 +1,13 @@
 pipeline {
     agent any
-
-   stage('Groovy'){
-            steps {
-                script {
-                    groove = load 'file.groovy'
-                    groove.deployToEnvironment('PROD')
+    stages{
+       stage('Groovy'){
+                steps {
+                    script {
+                        groove = load 'file.groovy'
+                        groove.deployToEnvironment('PROD')
+                    }
                 }
             }
-        }
+    }
 }
