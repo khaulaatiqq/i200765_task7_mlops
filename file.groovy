@@ -2,11 +2,11 @@ def deployToEnvironment(String environment) {
 
   if (environment == 'PROD') {
 
-            printIn("Deploying to production")
+            println("Deploying to production")
   }
   else
   {
-             printIn("Deploying to testing")
+             println("Deploying to testing")
   }
 
 }
